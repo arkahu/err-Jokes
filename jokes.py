@@ -7,7 +7,7 @@ import os, json, random
 class Jokes(BotPlugin):
     """Tells a joke from a list."""
             
-    def __init__(self):
+    def __init__(self, dummy=None): #sometimes there seems to be an extra argument
         self.datafile = 'jokes.txt' 
     
     @botcmd
