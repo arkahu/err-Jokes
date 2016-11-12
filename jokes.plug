@@ -1,0 +1,13 @@
+[Core]
+name = Jokes
+module = jokes
+
+[Documentation]
+description = Tells a joke from a list. Also functions for adding and removing from the list.
+
+[Python]
+version = 3
+
+[Errbot]
+min = 4.1.3
+
