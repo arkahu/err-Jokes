@@ -1,14 +1,17 @@
 from errbot import BotPlugin, botcmd
 import os, json, random
 
-#Version 1.0, 2016.11.12
+#Version 1.1, 2016
 #Arttu Huttunen, Oulu, Finland <arttuhut@gmail>
+
+#Errbot version 4.3? does not take inits, activate instead.
 
 class Jokes(BotPlugin):
     """Tells a joke from a list."""
-            
-    def __init__(self, dummy=None): #sometimes there seems to be an extra argument
-        self.datafile = 'jokes.txt' 
+
+    def activate(self):
+        self.datafile = 'jokes.txt'
+        super().activate()
     
     @botcmd
     def joke(self, msg, args):
